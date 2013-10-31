@@ -671,3 +671,11 @@ UPDATE `code_types` SET `ct_proc`='1' WHERE `ct_key`='CPT4' OR `ct_key`='HCPCS' 
 CREATE INDEX `form_id` ON `forms` (`form_id`);
 #EndIf
 
+#IfNotTable erx_ttl_touch
+CREATE TABLE `erx_ttl_touch` (
+  `patient_id` BIGINT(20) UNSIGNED NOT NULL COMMENT 'Patient record Id', 
+  `process` ENUM('allergies','medications') NOT NULL COMMENT 'NewCrop eRx SOAP process',
+  `updated` DATETIME NOT NULL COMMENT 'Date and time of last process update for patient', 
+  PRIMARY KEY (`patient_id`, `process`)
+) ENGINE = InnoDB COMMENT = 'Store records last update per patient data process';
+#EndIf

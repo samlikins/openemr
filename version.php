@@ -17,5 +17,5 @@ $v_realpatch = '14';
 // is a database change in the course of development.  It is used
 // internally to determine when a database upgrade is needed.
 //
-$v_database = 80;
+$v_database = 81;
 ?>
