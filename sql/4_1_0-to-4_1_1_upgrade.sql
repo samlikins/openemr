@@ -679,3 +679,7 @@ CREATE TABLE `erx_ttl_touch` (
   PRIMARY KEY (`patient_id`, `process`)
 ) ENGINE = InnoDB COMMENT = 'Store records last update per patient data process';
 #EndIf
+
+#IfNotColumnType prescriptions size varchar(16)
+ALTER TABLE `prescriptions` CHANGE `size` `size` varchar(16) DEFAULT NULL;
+#EndIf
