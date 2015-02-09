@@ -29,7 +29,7 @@ class eRxStore {
 	 * @return string        Value sanitized of all non numerical characters
 	 */
 	static public function sanitizeNumber($value) {
-		return preg_replace('/[^0-9.]/', '', $value);
+		return preg_replace('/[^-0-9.]/', '', $value);
 	}
 
 	/**
