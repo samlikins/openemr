@@ -1675,14 +1675,14 @@ $GLOBALS_METADATA = array(
       xl('Enable NewCrop eRx Service')
     ),    
     
-    'erx_path_production' => array(
+    'erx_newcrop_path' => array(
       xl('NewCrop eRx Site Address'),
       'text',                           // data type
       'https://secure.newcropaccounts.com/InterfaceV7/RxEntry.aspx',
       xl('Contact Medical Information Integration, LLC at http://mi-squared.com or ZH Healthcare at http://zhservices.com for subscribing the eRx service')
     ),
     
-    'erx_path_soap_production' => array(
+    'erx_newcrop_path_soap' => array(
       xl('NewCrop eRx Web Service Address'),
       'text',                           // data type
       'https://secure.newcropaccounts.com/v7/WebServices/Update1.asmx?WSDL;https://secure.newcropaccounts.com/v7/WebServices/Patient.asmx?WSDL',
@@ -1703,21 +1703,21 @@ $GLOBALS_METADATA = array(
       xl('Time-To-Live for Medications SOAP Request in seconds')
     ),
     
-    'partner_name_production' => array(
+    'erx_account_partner_name' => array(
       xl('NewCrop eRx Partner Name'),
       'text',                           // data type
       '',
       xl('Contact Medical Information Integration, LLC at http://mi-squared.com or ZH Healthcare at http://zhservices.com for subscribing the eRx service')
     ),
     
-    'erx_name_production' => array(
+    'erx_account_name' => array(
       xl('NewCrop eRx Name'),
       'text',                           // data type
       '',
       xl('Contact Medical Information Integration, LLC at http://mi-squared.com or ZH Healthcare at http://zhservices.com for subscribing the eRx service')
     ),
     
-    'erx_password_production' => array(
+    'erx_account_password' => array(
       xl('NewCrop eRx Password'),
       'pass',                           // data type
       '',
