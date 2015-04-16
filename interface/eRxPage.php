@@ -169,12 +169,7 @@ class eRxPage {
 
 		foreach ($extensions as $extension) {
 			if(!extension_loaded(strtolower($extension))) {
-				$messages[] =
-					xl('Enable Extension').' '.
-					htmlspecialchars(
-						$extension,
-						ENT_QUOTES
-					);
+				$messages[] = xl('Enable Extension').' '.$extension;
 			}
 		}
 

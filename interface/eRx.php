@@ -87,7 +87,7 @@ if(count($missingExtensions) > 0) {
 		<ul>
 			<?php foreach($messages['demographics'] as $message) { echo '<li>'.text($message).'</li>'; } ?>
 		<ul>
-		<p><?php echo xlt('You will be automatically redirected to Demographics.  You may make the necessary corrections and navigate to NewCrop again.'); ?></p>
+		<p><?php echo xlt('You will be automatically redirected to Demographics. You may make the necessary corrections and navigate to NewCrop again.'); ?></p>
 <?php
 
 		ob_end_flush();
